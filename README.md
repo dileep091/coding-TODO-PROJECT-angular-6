@@ -1,4 +1,11 @@
 
+steps followed to develop
+
+1. Used inter-component communication from App Component to Todos List    Component and Complete List Component.
+2. Achieved inter component communication using @Input(), @Output decorators.
+3. Used class binding using ngClass attribute for dynamic selectors i.e, selected class. (All, Active, Completed sections)
+4. Added methods for all events like adding, editing for double click and removing todos.
+5. Added filter function for Active and Completed Todos.
 
 This project is a fork of [Todo MVC](http://todomvc.com/)
 
