@@ -1,0 +1,10 @@
+<ul class="todo-list" *ngFor="let todo of todos; let i = index">
+  <li [ngClass]="todo.completed === true ? 'completed':''">
+    <div class="view">
+      <input class="toggle" type="checkbox" (click)=todoToggle($event,i)/>
+      <label *ngIf="!editable[i]" (dblclick)="onDbClick(i)">{{todo.text}}</label>
+      <input *ngIf="editable[i]" type="text" [(ngModel)]="todo.text" [ngModelOptions]="{standalone: true}" (keyup.enter)="submitTodo(i,todo.text)"/>
+      <button class="destroy" (click)="removeTodo(i)"></button>
+    </div>
+  </li>
+</ul>
