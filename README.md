@@ -1,6 +1,4 @@
-# LabCorp Clinical Development UI Developer Assessment
 
-## Thank you for your interest in working with us at LabCorp!
 
 This project is a fork of [Todo MVC](http://todomvc.com/)
 
